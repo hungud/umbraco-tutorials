@@ -1,0 +1,43 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "My.WelcomePackage",
+  "version": "0.1.0",
+  "extensions": [
+    {
+      "type": "dashboard",
+      "alias": "my.welcome.dashboard",
+      "name": "My Welcome Dashboard",
+      "element": "/App_Plugins/welcome-dashboard/dist/welcome-dashboard.js",
+      "elementName": "my-welcome-dashboard",
+      "weight": -1,
+      "meta": {
+        "label": "#welcomeDashboard_label",
+        "pathname": "welcome-dashboard"
+      },
+      "conditions": [
+        {
+          "alias": "Umb.Condition.SectionAlias",
+          "match": "Umb.Section.Content"
+        }
+      ]
+    },
+    {
+      "type": "localization",
+      "alias": "MyPackage.Localize.EnUS",
+      "name": "English",
+      "meta": {
+        "culture": "en-US"
+      },
+      "js": "/App_Plugins/welcome-dashboard/Localization/en-US.js"
+    },
+    {
+      "type": "localization",
+      "alias": "MyPackage.Localize.Da",
+      "name": "Danish",
+      "meta": {
+        "culture": "da"
+      },
+      "js": "/App_Plugins/welcome-dashboard/Localization/da.js"
+    }
+  ]
+}

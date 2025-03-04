@@ -23,7 +23,7 @@
     },
     {
       "type": "localization",
-      "alias": "MyPackage.Localize.EnUS",
+      "alias": "MyPackage.Localize.EnUs",
       "name": "English",
       "meta": {
         "culture": "en-US"

@@ -1,3 +1,5 @@
+console.log("Loaded English localization");
+
 export default {
     welcomeDashboard: {
       label: "Welcome Dashboard",

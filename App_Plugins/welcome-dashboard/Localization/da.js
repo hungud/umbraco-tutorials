@@ -1,3 +1,5 @@
+console.log("Loaded Danish localization");
+
 export default {
     welcomeDashboard: {
       label: "Velkomst Dashboard",
